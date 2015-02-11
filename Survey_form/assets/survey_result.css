@@ -1,0 +1,35 @@
+#wrapper
+	{
+		width:800px;
+		height:500px;
+	}
+
+.infoBox
+	{
+		background-color:palegreen;
+		height: 80px;
+		width: 400px;
+		border: 2px solid green;
+		margin: 20px auto; 
+	}
+.infoBox p
+	{
+		padding: 10px;
+	}
+.contentBox
+	{
+		background-color: whitesmoke;
+		height: 400px;
+		width: 400px;
+		border: 2px solid lightgray;
+	}
+.contentBox .right
+	{
+		text-align: right;
+		margin-right:10px;
+	}
+#submit
+	{
+		background-color: lightblue;
+		border-radius:5px; 
+	}
