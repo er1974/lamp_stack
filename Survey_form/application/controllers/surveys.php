@@ -9,28 +9,29 @@ class surveys extends CI_Controller
 
 	public function process_form()
 	{
-	 	if($this->session->userdata('count')==null)
+	 	if($this->session->userdata('count') == NULL)
 	 	{
 	 		$this->session->set_userdata('count',1);
 	 		$result = $this->session->userdata('count');
-	 		$POST['count'] = $result;
+	 		$view_data['count'] = $result;
 	 	}
 	 	else
 	 	{
-	 		$tem = $this->session->userdata('count');
-	 		$tem += 1;
-	 		$this->session->set_userdata('count',$temp);
-	 		$result= $this->session->userdata('count');
-	 		$POST['count'] = $result;
-	 	}
-	 	
-	 	{
-	 		$POST['name'] = $this->session->POST('name');
-	 		$POST['location'] = $this->input->POST("location");
-	 		$POST['language'] = $this->input->POST("language");
-	 		$POST['csomment'] = $this->input->POST("comment");
+	 		$view_count = $this->session->userdata('count');
+	 		$view_count += 1;
 
-	 		$this->load->view('survey_result', $POST);
+	 		$this->session->set_userdata('count', $view_count);
+
+	 		$view_data['count'] = $this->session->userdata('count');;
 	 	}
+
+	 	$view_data = $this->session->post();
+
+ 		// $view_data['name'] 	   = $this->session->post('name');
+ 		// $view_data['location'] = $this->input->post("location");
+ 		// $view_data['language'] = $this->input->post("language");
+ 		// $view_data['comment'] = $this->input->post("comment");
+
+ 		$this->load->view('survey_result', $view_data);
 	}
 }

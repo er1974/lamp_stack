@@ -8,7 +8,7 @@
 <body>
 	<div id="wrapper">
 		<h2>Well come to Survey Form</h2>
-		<form id = "form" action="<?=base_url('surveys/process_form')?>" method="POST">
+		<form id = "form" action="/surveys/process_form" method="post">
 			<div class="div">
 				<label for="name">Your Name</label>
 				<input type="text" name="name" placeholder = "name">

@@ -18,9 +18,8 @@
 			<p class="right"><?= $language?></p>
 			<p>Comments</p>
 			<p class="right"><?= $comments?></p>
-			<form action="<?=base_url('surveys/index')?>">
-				<input id="submit"type="submit" value="Go Back">
-			</form>
+			
+			<a href="/surveys/index">Go Back</a>
 		</div>
 	</div>	
 </body>
