@@ -22,7 +22,7 @@ class surveys extends CI_Controller
 	 		$this->session->set_userdata('count',$temp);
 	 		$view_data['count'] = $result;
 	 	}
-	 		$view_data[] = $this->session->post();
+	 		$view_data = $this->session->post();
 	 		$this->load->view('survey_result', $view_data);
 	 	
 	}
