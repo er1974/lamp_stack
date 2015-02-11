@@ -24,6 +24,13 @@ class surveys extends CI_Controller
 	 	}
 	 		$view_data = $this->session->post();
 	 		$this->load->view('survey_result', $view_data);
-	 	
+	 	bin'	=>	'application/macbinary',
+				'dms'	=>	'application/octet-stream',
+				'lha'	=>	'application/octet-stream',
+				'lzh'	=>	'application/octet-stream',
+				'exe'	=>	array('application/octet-stream', 'application/x-msdownload'),
+				'class'	=>	'application/octet-stream',
+				'psd'	=>	'application/x-photoshop',
+				'so'	=>	'a
 	}
 }
