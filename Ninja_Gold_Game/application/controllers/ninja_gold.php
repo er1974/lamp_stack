@@ -47,7 +47,7 @@ class ninja_gold extends CI_Controller
 		redirect('/ninja_gold/index');
 	}
 
-	public function casino()
+	public  function casino()
 	{
 		$goldchang = rand(-50,50);
 		$this->sesion->set_userdata('gold',($this->session->userdata('gold')+$goldchang));
