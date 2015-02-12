@@ -18,7 +18,6 @@
 			<p class="right"><?= $language?></p>
 			<p>Comments</p>
 			<p class="right"><?= $comments?></p>
-			
 			<a href="/surveys/index">Go Back</a>
 		</div>
 	</div>	

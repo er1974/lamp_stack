@@ -1,0 +1,21 @@
+body
+	{
+		width:500px;
+		margin:50px auto;
+		text-align:center;
+	}
+h1
+	{
+		background-color: lightyellow;
+		color:red;
+		border:3px solid red;
+		border-radius: 76px;
+		padding: 15px;
+	}
+#submit
+	{
+		background-color: lightyellow;
+		border:1px solid red;
+		border-radius: 76px;
+		text-decoration:bold;
+	}
